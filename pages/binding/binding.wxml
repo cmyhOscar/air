@@ -1,0 +1,15 @@
+<view class='page'>
+  <view class='bindBg' style="height:{{sheight}}px; ">
+    <view class='bindTitle'>用户绑定</view>
+  	<view style='margin-top: {{sheight/2-120}}px; width: {{swidth-60}}px' class='bindEnt'>
+  		<view class='col-xs-3 text-right'>姓名：</view>
+  		<view class='col-xs-9'><input type="text" placeholder='请输入姓名' /></view>
+  		<view class='col-xs-3 text-right'>手机号：</view>
+  		<view class='col-xs-9'><input type="number" placeholder='请输入手机号' /></view>
+  	</view>
+
+  	<view class='bingSub'>
+  		<button type='primary'>绑定</button>
+  	</view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<view class="page">
+  <view>
+    <view class='title'>手写签名</view>
+    <view class='signArea'>
+      
+      <view class="container" style='padding:0px;'>
+        <!-- <view>手写板（请在下方区域手写内容）</view> -->
+        <canvas style="width: {{canvasw}}px; height: {{canvash}}px" class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+        <view style="width: {{canvasw}}px;display:flex; justify-content:flex-end;" class='btns canvaspd'>
+          <view class='col-xs-6' style='padding:10px;'><button type='warn' bindtap="cleardraw">重新签名</button></view>
+        </view>
+         <!-- <image src='{{canvasimgsrc}}'></image>  -->
+      </view>
+
+    </view>
+  </view>
+
+  <view>
+    <view class='title'>其他信息</view>
+    <view class='signContent'>
+
+      <view class='col-xs-3'>会议</view>
+      <view class='col-xs-9'>
+        <picker bindchange="bindMeetingChange" value="{{meeting}}" range="{{array1}}">
+          <view class="picker">{{array1[meeting]}}
+          </view>
+        </picker>
+      </view>
+
+      <view class='col-xs-3'>单位</view>
+      <view class='col-xs-9'>
+        <picker bindchange="bindCompanyChange" value="{{company}}" range="{{array2}}">
+          <view class="picker">{{array2[company]}}
+          </view>
+        </picker>
+      </view>
+
+      <view class='col-xs-3'>电话</view>
+      <view class='col-xs-9'>
+        <input type='text' auto-focus/>
+      </view>
+
+      <view class='col-xs-12' style='margin-top:20px;'>
+        <button type='primary' bindtap="setSign"> 确定签到 </button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+@import "../../libs/style/common.wxss";
+.bindTitle{font-size: 26px; text-align: center;}
+.bindEnt{height: 50px; background: #fff; margin:auto; overflow:hidden; height: 120px; }
+.bindEnt view{height: 50px;line-height: 50px; margin:5px 0;}
+.bindEnt input{height: 48px;line-height: 48px; padding:0 5px; border-bottom: 1px solid #ccc}
+.bingSub{position: absolute; bottom:30px; left:30px; right:30px;}
